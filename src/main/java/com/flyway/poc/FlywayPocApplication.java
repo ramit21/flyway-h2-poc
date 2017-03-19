@@ -18,7 +18,7 @@ public class FlywayPocApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FlywayPocApplication.class, args);
-		logger.debug("## FlywayPocApplication is up and running"); //logging must be set to debug to see the logs
+		logger.debug("## FlywayPocApplication is up and running"); //logging must be set to debug to see this log
 	}
 	
 	@Bean
