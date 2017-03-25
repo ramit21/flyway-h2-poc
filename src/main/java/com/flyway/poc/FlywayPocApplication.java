@@ -30,6 +30,11 @@ public class FlywayPocApplication {
 				for (Reservation reservation : reservations) {
 					logger.info(reservation);
 				}
+				//Update first row, and see the version no. change
+				Reservation rev = reservations.get(0);
+				rev.setReservationName("Crassus");
+				rev = repo.saveAndFlush(rev);
+				logger.info("Updated: " + rev);			
 			}
 		};
 	}
